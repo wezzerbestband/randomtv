@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Randomizer</title>
+		<meta name="author" content="Eric Toribio">
+		<meta name="description" content="A tool to randomly choose TV episodes to watch.">
+		<link href="https://www.w3schools.com/w3css/5/w3.css" rel="stylesheet" type="text/css" media="all">
+		<link href="index.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<center><div id="main">
+			<center><button id="ranGen" onclick="newEp()"><span id="randEpisode" style="font-family: akbar, Trebuchet MS;">Get Random Episode</span></button><br>
+			<p><select name="seasonselect" id="seasonchoice">
+				<option value="theSimpsonsSeasons">All Seasons</option>
+				<option value="theSimpsonsS01">Season 1</option>
+				<option value="theSimpsonsS02">Season 2</option>
+				<option value="theSimpsonsS03">Season 3</option>
+				<option value="theSimpsonsS04">Season 4</option>
+				<option value="theSimpsonsS05">Season 5</option>
+				<option value="theSimpsonsS06">Season 6</option>
+				<option value="theSimpsonsS07">Season 7</option>
+				<option value="theSimpsonsS08">Season 8</option>
+				<option value="theSimpsonsS09">Season 9</option>
+			</select></p>
+			<p>Season <span id="randseason"></span><br>
+			Episode <span id="randepisode"></span><br></p>
+			<p style="font-family:akbar, Trebuchet MS;">"<span id="randtitle"></span>"</center></p>
+			<script type="text/javascript" src="app.js"></script>
+			<noscript>this page requires javascript</noscript>
+		</div></center>
+	</body>
+</html>
